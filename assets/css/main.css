@@ -18,7 +18,20 @@
 	
 	}
 
-
+	
+	.brightness img{
+		opacity: 0.4;
+		display: inline-block;
+		text-align: center;
+		margin-left: 20px;
+	}		
+	.brightness img:hover {
+		opacity: 0.8;
+	}
+	.brightness a{
+		color: transparent;
+	}
+	
 	.myBannerImage{
 		background-image: url("http://i.imgur.com/0kqNgAv.png");
 		width:100%;
