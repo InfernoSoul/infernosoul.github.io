@@ -1,0 +1,277 @@
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <meta value="IE=9" http-equiv="X-UA-Compatible" />
+    <title>Underworld Dungeon Presskit</title>
+    <link type="text/css" rel="stylesheet" href="style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"
+type="text/javascript"></script>
+    <script src="validation.js" type="text/javascript"></script>
+    <script>
+	$(window).load( function() {
+		checkVis("factsheet");
+		checkVis("description");
+		checkVis("history");
+		checkVis("projects");
+		checkVis("trailers");
+		checkVis("images");
+		checkVis("logo");
+		checkVis("awards");
+		checkVis("quotes");
+				checkVis("credits");
+		checkVis("contact");
+	} );
+
+	$(window).scroll( function() {
+		checkVis("factsheet");
+		checkVis("description");
+		checkVis("history");
+		checkVis("projects");
+		checkVis("trailers");
+		checkVis("images");
+		checkVis("logo");
+		checkVis("awards");
+		checkVis("quotes");
+				checkVis("credits");
+		checkVis("contact");
+	} );
+
+	function checkVis(elem)
+	{
+		if( isVis( "#"+elem ) ) $("#m-"+elem).css("color","#000"); else $("#m-"+elem).css("color","#666");
+	}
+
+	function isVis(elem)
+	{
+		var docViewTop = $(window).scrollTop();
+		var docViewBottom = docViewTop + $(window).height();
+	
+		var elemTop = $(elem).offset().top;
+		var elemBottom = elemTop + $(elem).height();
+	
+    
+		return ( (elemBottom >= docViewTop && elemBottom <= docViewBottom) || (elemTop <= docViewBottom && elemTop >= docViewTop) || (elemTop <= docViewTop && elemBottom >= docViewBottom) );
+	}
+</script><base target="_blank" />
+  </head>
+  <body>
+    <!-- Page start -->
+    <div id="container">
+      <!-- Navigation start -->
+      <div id="navigation">
+        <p></p>
+        <h1 id="game-title">Underworld</h1>
+        <h1>Dungeon</h1>
+        <p></p>
+        <br />
+        <ul>
+          <li><a target="_self" id="m-factsheet" href="#factsheet">Factsheet</a></li>
+          <li><a target="_self" id="m-description" href="#description">Description</a></li>
+          <li><a target="_self" id="m-history" href="#history">Inspiration</a></li>
+          <!-- <li><a href="#projects" id="m-projects" target="_self">Projects</a></li>-->
+          <li><a target="_self" id="m-trailers" href="#trailers">Videos</a></li>
+          <li><a target="_self" id="m-images" href="#images">Images</a></li>
+          <li><a target="_self" id="m-logo" href="#logo">Logo &amp; Icon</a></li>
+          <!-- <li><a href="#awards" id="m-awards" target="_self">Awards & Recognition</a></li>-->
+          <!-- <li><a href="#quotes" id="m-quotes" target="_self">Selected Articles</a></li>-->
+          <!-- -->
+          <li><a target="_self" id="m-credits" href="#credits">Team</a></li>
+          <li><a target="_self" id="m-contact" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div id="content">
+        <!-- Header --> <img width="960" id="header" src="images/UDHead.png" />
+        <!-- Factsheet start -->
+        <div id="factsheet">
+          <h2>Factsheet</h2>
+          <!-- Developer information -->
+          <p><strong>Developer:</strong><br />
+            <a href="https://twitter.com/InfernoSoulDev">Inferno Soul</a><br />
+            Based in Dubai, AE</p>
+          <p><strong>Publisher:</strong><br />
+            <a href="https://twitter.com/PandaFromjaf">Panda Games</a><br />
+            Based in Palo Alto, CA</p>
+          <p><strong>Store Page:</strong><br />
+            <a href="http://store.steampowered.com/app/520300/Underworld_Dungeon/">http://store.steampowered.com/Underworld_Dungeon/</a></p>
+          <p><b>Release Date:</b><br />
+            July 31st 2017 </p>
+          <p><strong>Press / Business Contact:</strong><br />
+            <a href="mailto:pandafromjaf@gmail.com">pandafromjaf@gmail.com</a></p>
+          <!-- License Contact -->
+          <!-- Social -->
+          <p><strong>Social:</strong><br />
+            <a href="http://https://soundcloud.com/pixel-noise">pixel-noise</a><br />
+          </p>
+          <!-- Platforms -->
+          <p><strong>Platforms:</strong><br />
+            Steam (Windows, OSX, Linux) </p>
+        </div>
+        <!-- Description start -->
+        <div id="right-of-factsheet">
+          <div id="description">
+            <h2>Description</h2>
+            Underworld Dungeon is a rogue-like action-adventure releasing in
+            late July, in which the player explores a ruined Greek dungeon
+            hidden within the depths of the Underworld. As they dig deeper,
+            ancient weapons and armor will be uncovered which can be combined to
+            create more powerful gear. The player will need all the items that
+            they can scavenge and craft to conquer the challenging dungeon; a
+            dungeon that masks unspeakable horrors, mythical secrets and
+            finally, the promise of a 'priceless treasure', which awaits them at
+            the end of it all.</div>
+          <!-- History start -->
+          <div id="history">
+            <h2>Inspiration</h2>
+            <strong></strong>
+            <p>Underworld Dungeon takes great inspiration from 'The Legend of
+              Zelda' as well as fellow roguelikes such as 'The Binding of Isaac'
+              and 'Nuclear Throne'. The game also takes it's crafting, gear and
+              inventory system from one seen in Terraria, as well as taking the
+              combat style seen in Dark Souls as a basis for that in the game.</p>
+            <h2>Featurelist</h2>
+            <strong></strong>
+            <ul>
+              <li>Over 150 weapons, armour pieces and gear</li>
+              <li>A semi-permament death system, allowing for new items to be
+                unlocked for future playthroughs</li>
+              <li>A fully fledged crafting system, allowing for the most
+                devastating of weapons</li>
+              <li>Full Steamworks support, with Achievements and Leaderboards
+                included</li>
+              <li>Many bosses and enemies for the player to encounter during
+                runs</li>
+              <li>Many secrets and NPC's to be discovered inside the dungeon</li>
+              <li>Continual support for the game for at least 12 months
+                post-release</li>
+            </ul>
+            <h2>Release</h2>
+            <strong></strong>
+            <p>Although we initially plan on releasing only through Steam, we also eventually plan on adding the game through services such as GOG and the Humble Store. The game will retail for $9.99, but will also provide a deluxe edition for $14.99, including the OST, a Digital Art Book and a Digital Guide for the game.</p>
+            <p></p>
+          </div>
+          <!-- Features start -->
+          <div id="projects">
+            <!--<h2>Inspiration</h2>-->
+            <ul>
+            </ul>
+          </div>
+        </div>
+        <!-- Clear -->
+        <div class="clear">
+          <!-- Trailers start -->
+          <div id="trailers">
+            <h2>Trailers</h2>
+            <p><strong>RELEASE DATE TRAILER (July 2017)</strong> <a href="https://www.youtube.com/watch?v=Enzy3YSOnrU">YouTube</a><iframe
+                width="720" height="396" frameborder="0" allowfullscreen="" src="https://www.youtube.com/watch?v=Enzy3YSOnrU"></iframe></p>
+          </div>
+          <!-- Clear -->
+          <div class="clear">
+            <!-- Screenshots start -->
+            <div id="images">
+              <h2>Images (Click to Zoom)</h2>
+              <a href="images/4.png">
+                <div class="preview-wrapper"><img alt="4.png" src="images/4.png"
+                    class="preview" /></div>
+              </a><a href="images/8.gif">
+                <div class="preview-wrapper"><img alt="8.gif" src="images/8.gif"
+                    class="preview" /></div>
+              </a><a href="images/3.gif">
+                <div class="preview-wrapper"><img alt="3.gif" src="images/3.gif"
+                    class="preview" /></div>
+              </a><a href="images/10.gif">
+                <div class="preview-wrapper"><img alt="10.gif" src="images/10.gif"
+                    class="preview" /></div>
+              </a><a href="http://imgur.com/fRkldRM">
+                <div class="preview-wrapper"><img alt="http://imgur.com/fRkldRM"
+                    src="http://i.imgur.com/fRkldRM.gif" class="preview" /></div>
+              </a><a href="images/9.gif">
+                <div class="preview-wrapper"><img alt="9.gif"
+                    src="images/9.gif" class="preview" /></div>
+              </a><a href="images/3.gif">
+                <div class="preview-wrapper"><img alt="3.gif"
+                    src="images/3.gif" class="preview" /></div>
+              </a><a href="images/5.png">
+                <div class="preview-wrapper"><img alt="5.png"
+                    src="images/5.png" class="preview" /></div>
+              </a><a href="images/6.jpg">
+                <div class="preview-wrapper"><img alt="6.jpg"
+                    src="images/6.jpg" class="preview" /></div>
+              </a><a href="images/2.jpg">
+                <div class="preview-wrapper"><img alt="2.jpg"
+                    src="images/2.jpg" class="preview" /></div>
+              </a><a href="images/7.jpg">
+                <div class="preview-wrapper"><img alt="7.jpg"
+                    src="images/7.jpg" class="preview" /></div>
+              </a><a href="images/1.png">
+                <div class="preview-wrapper"><img alt="1.png"
+                    src="images/1.png" class="preview" /></div>
+              </a>
+              <p style="clear:both"><br />
+              </p>
+            </div>
+            <!-- Clear -->
+            <div class="clear">
+              <!-- Logo start -->
+              <div id="logo">
+                <h2>Logos &amp; Icons</h2>
+                <a href="images/logo.jpg"><img alt="logo" src="images/logo.jpg" /></a>
+                <a href="images/ethan.png"><img alt="logo" src="images/ethan.png" /></a>
+              </div>
+              <!-- Clear -->
+              <div class="clear">
+                <!-- Award start -->
+                <div id="awards">
+                  <!-- <h2>Awards & Recognition</h2>-->
+                  <ul>
+                  </ul>
+                </div>
+                <!-- Clear -->
+                <!-- <div class="clear" /> -->
+                <!-- Quote start -->
+                <div id="quotes">
+                  <!-- <h2>Selected Articles</h2> -->
+                  <ul>
+                  </ul>
+                </div>
+                <!-- Clear -->
+                <!-- <div class="clear" /> -->
+                <!-- Links -->
+                <!-- Credits -->
+                <div id="credits">
+                  <h2>Team</h2>
+                  <p><strong>Kyn-Han (Ethan) Tang</strong><br />
+                    Developing / Art Design</p>
+                  <p><strong>Noel Andersen</strong><br />
+                    Publishing / Marketing</p>
+                  <p><strong>Pixel Noise</strong><br />
+                    Audio Design / Soundtrack</p>
+                </div>
+                <!-- Contact -->
+                <div id="contact">
+                  <h2>Contact</h2>
+                  <p><strong>Business Inquiries</strong><br />
+                    <a href="mailto:pandafromjaf@gmail.com">pandafromjaf@gmail.com</a></p>
+                  <p><strong>Panda Games Twitter</strong><br />
+                    <a href="https://twitter.com/PandaFromjaf">https://twitter.com/PandaFromjaf</a></p>
+                  <p><strong>InfernoSoul Twitter</strong><br />
+                    <a href="https://twitter.com/InfernoSoulDev">https://twitter.com/InfernoSoulDev</a></p>
+                  <strong>Pixel Noise SoundCloud</strong><br />
+                  <a href="http://https://soundcloud.com/pixel-noise">https://soundcloud.com/pixel-noise</a>
+                </div>
+                <!-- Clear -->
+                <div class="clear">
+                  <p class="credits"><a href="http://dopresskit.com/">presskit()</a>
+                    by Rami Ismail (<a href="http://www.vlambeer.com/">Vlambeer</a>)
+                    - also thanks to <a href="sheet.php?p=credits">these fine
+                      folks</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
